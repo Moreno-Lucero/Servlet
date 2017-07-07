@@ -1,0 +1,13 @@
+<web-app>
+
+    <servlet>
+        <servlet-name>luceromoreno</servlet-name>
+        <servlet-class>ServletDoing</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>luceromoreno</servlet-name>
+        <url-pattern>/start</url-pattern>
+    </servlet-mapping>
+
+</web-app>
