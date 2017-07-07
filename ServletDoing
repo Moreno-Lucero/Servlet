@@ -1,0 +1,26 @@
+# Servlet
+package Servlet;
+
+/**
+ * Created by luceromoreno on 7/6/17.
+ */
+import javax.servlet.http.*;
+import javax.servlet.*;
+import java.io.*;
+public class ServletDoing extends HttpServlet{
+    public void doGet(HttpServletRequest req,HttpServletResponse htmlstuff)
+            throws ServletException,IOException
+    {
+        htmlstuff.setContentType("text/html");
+        PrintWriter display=htmlstuff.getWriter();
+
+        display.println("<html><body>");
+        display.println("This will display whatever I want it to display");
+        display.println("Bank Account Balance");
+        display.println("Regina Moore: $14,082.57");
+        display.println("Bailey Ross: $5,731.32");
+        display.println("Chance Linsay: $76,930.28");
+        display.println("</body></html>");
+
+        display.close();
+    }}
